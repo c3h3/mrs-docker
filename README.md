@@ -9,4 +9,4 @@ MRS_FILE=en_microsoft_r_server_for_linux_x64_xxxxx.tar.gz sh build.sh
 ```
 docker run -p 8787:8787 -d microsoft/mrs-linux-rstudio
 ```
-- Visit ![http://localhost:8787](http://localhost:8787)
+- Visit [http://localhost:8787](http://localhost:8787)
