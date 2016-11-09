@@ -1,8 +1,8 @@
-FROM rocker/rstudio:latest
+FROM rocker/rstudio:3.3.2
 
 MAINTAINER Chia-Chi Chang <c3h3.tw@gmail.com>
 
-RUN apt-get update && apt-get remove -y r-cran-littler r-base-dev r-recommended r-base r-base-core
+RUN apt-get update && apt-get remove -y r-base-dev r-recommended r-base r-base-core
 
 ARG MRS_FILE
 COPY $MRS_FILE /tmp/$MRS_FILE
