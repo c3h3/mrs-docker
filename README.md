@@ -8,12 +8,12 @@
 - Build your mrs/base image:
 ```
 cd base && MRS_FILE=en_microsoft_r_server_for_linux_x64_xxxxx.tar.gz sh build.sh
-
+```
 - Build your mrs/rstudio image:
 ```
 cd rstudio && sh build.sh
 ```
-```
+
 - After building docker images, just run it:
 ```
 docker run -p 8787:8787 -d mrs/rstudio
